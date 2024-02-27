@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up Form</title>
+<link rel="stylesheet" href="Form.css">
+  <script src="validate.js" ></script>
+</head>
+<body>
+<div class="background-image">
+
+<div  class="container">
+    <h1>Sign Up</h1><br>
+  <span id="error-display"></span>
+    <form action="register.php" onsubmit="return validateReg()" method="post">
+        <div class="input-group">
+            <input type="text" id="firstname" name="firstname" placeholder="Firstname" >
+        </div>
+        <div class="input-group">
+            <input type="text" id="lastname" name="lastname" placeholder="Lastname" >
+        </div>
+        <div class="input-group">
+            <input type="text" id="username" name="username" placeholder="Username" >
+        </div>
+        <div class="input-group">
+            <input type="password" id="password" name="password" placeholder="Password" >
+        </div>
+        <div class="input-group">
+            <input type="password" id="c-password" name="c-password" placeholder="Confirm-Password" >
+        </div>
+
+        <button type="submit"class="btn-sign-up">Sign Up</button>
+        <span style="margin-left: 10px">Already have an account? <a style="text-decoration: none;" href="index.html">Login</a></span>
+    </form>
+</div>
+</div>
+
+
+</body>
+
+</html>
